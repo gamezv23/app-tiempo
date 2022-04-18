@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-time';
 
-buscar(){
+buscar(nombreBuscar:any){
+  console.log(nombreBuscar.value)
 
 }
 

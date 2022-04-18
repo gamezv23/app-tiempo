@@ -13,6 +13,10 @@ export class AppComponent {
 
 buscar(nombreBuscar:any){
   console.log(nombreBuscar.value)
+  this.servicio_de_tiempo.obtenerTiempo(nombreBuscar.value)
+  .subscribe((datos)=>{
+    console.log(datos)
+  })
 
 }
 
